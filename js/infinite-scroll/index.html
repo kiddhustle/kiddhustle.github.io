@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+        Remove this if you use the .htaccess -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Nature Box - Unlimited Video Downloads</title>
+        <meta name="description" content="">
+        <meta name="author" content="Aaron">
+
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+        <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="stylesheet" type="text/css" href="../../bower_components/foundation/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../../bower_components/foundation-icon-fonts/foundation-icons.css" />
+        <link rel="stylesheet" type="text/css" href="../../bower_components/animate.css/animate.min.css" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <script type="application/javascript" src="../../bower_components/modernizr/modernizr.js"></script>
+    </head>
+
+    <body>
+        <section class="layout">
+            <header class="header">
+                <img alt="Video Box - Unlimited Video Downloads" src="images/logo.jpg" class="header__logo" />
+                <nav class="header__nav">
+                    <a class="header__nav__item" href="../payment.html?utm_source=reporo&amp;utm_medium=landingpage&amp;utm_campaign=pp_thumbtiles&amp;utm_content=nav1">Home</a>
+                    <a class="header__nav__item" href="../payment.html?utm_source=reporo&amp;utm_medium=landingpage&amp;utm_campaign=pp_thumbtiles&amp;utm_content=nav2">Top Vids</a>
+                    <a class="header__nav__item" href="../payment.html?utm_source=reporo&amp;utm_medium=landingpage&amp;utm_campaign=pp_thumbtiles&amp;utm_content=nav3">Genres</a>
+                </nav>
+                <p class="header__copy">Here is a dose of fun nature videos for iPhone, iPod and Android.</p>
+            </header>
+            <section id="videos" class="videos">
+                <div class="videos__item">
+                    <a class="videos__item__cta" href="http://fifthelement.wiardweb.com/">Click to buy</a>
+                    <a href="http://fifthelement.wiardweb.com/" class="videos__item__box">
+                        <img alt="video thumbnail placeholder" src="images/thumbs/giraffes.png" class="videos__item__thumb" />
+                    </a>
+                    <a class="videos__item__watch" href="http://fifthelement.wiardweb.com/">Watch Video</a>
+                    <div class="videos__item__meta">
+                        <p>Giraffe head-butting match</p>
+                        <p>
+                            <span class="fi-heart"></span> 200k | <span class="fi-clock"></span> 2 mins 21 secs 
+                            <br />
+                            <span class="fi-star"></span>
+                            <span class="fi-star"></span>
+                            <span class="fi-star"></span>
+                            <span class="fi-star"></span>
+                            <span class="fi-star" style="color:rgba(150,150,150,0.5);"></span>
+                                
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="videos__item">
+                    <a class="videos__item__cta" href="http://fifthelement.wiardweb.com/">Click to buy</a>
+                    <a href="http://fifthelement.wiardweb.com/" class="videos__item__box">
+                        <img alt="video thumbnail placeholder" src="images/thumbs/seabirds.png" class="videos__item__thumb" />
+                    </a>
+                    <a class="videos__item__watch" href="http://fifthelement.wiardweb.com/">Watch Video</a>
+                    <div class="videos__item__meta">
+                        <p>Birds flying over the ocean</p>
+                        <p>
+                            <span class="fi-heart"></span> 200k | <span class="fi-clock"></span> 2 mins 10 secs
+                            <br />
+                            <span class="fi-star"></span>
+                            <span class="fi-star"></span>
+                            <span class="fi-star"></span>
+                            <span class="fi-star"></span>
+                            <span class="fi-star" style="color:rgba(150,150,150,0.5);"></span>
+                                
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!--<footer class="footer">
+                
+            </footer>-->
+        </section>
+        <script id="tpl_video_item" type="x-tmpl-mustache">
+            <div class="videos__item">
+                <a class="videos__item__cta" href="http://fifthelement.wiardweb.com/">Click to buy</a>
+                <a href="http://fifthelement.wiardweb.com/" class="videos__item__box">
+                    <img alt="video thumbnail {{description}}" src="{{thumbnail}}" class="videos__item__thumb" />
+                </a>
+                <a class="videos__item__watch" href="http://fifthelement.wiardweb.com/">Watch Video</a>
+                <div class="videos__item__meta">
+                    <p>{{description}}</p>
+                    <p>
+                        <span class="fi-heart"></span> {{views}} | <span class="fi-clock"></span> {{duration}} 
+                        <br />
+                        <span class="fi-star"></span>
+                        <span class="fi-star"></span>
+                        <span class="fi-star"></span>
+                        <span class="fi-star"></span>
+                        <span class="fi-star" style="color:rgba(150,150,150,0.5);"></span>
+                    </p>
+                </div>
+            </div>
+        </script>
+        <script type="application/javascript" src="require-cfg.js"></script>
+        <script type="application/javascript" src="../../bower_components/requirejs/require.js" data-main="main.js"></script>
+    </body>
+</html>

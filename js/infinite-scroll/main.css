@@ -1,0 +1,171 @@
+/**
+ *     BEM
+ *     block__element--modifier
+ */
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;/*unnecessary in new webkit browsers */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    background:#000000;
+    color:#ffffff;
+}
+
+
+.layout {
+    min-width:240px;
+    max-width:320px;
+    margin: 0px auto;
+    text-align:center;
+    padding:0px 5px;
+}
+
+/**
+ * 	Colors
+ */
+
+
+#COLOR-PP-PINK,
+#color-pp-pink
+{
+	color:#EC7FEC
+}
+
+#BG-COLOR-PP-PINK,
+.videos__item__watch,
+#bg-color-pp-pink
+{
+	background-color:#EC7FEC;
+}
+
+#BG-COLOR-PINK-2,
+
+#bg-color-pink-2 {
+	background-color:#E9967A;
+}
+
+#BG-COLOR-YELLOW,
+.header__nav__item,
+#bg-color-yellow
+{
+	background-color: #f4f7c0;
+}
+
+.header{
+    
+}
+.header__logo{
+    display:block;
+    max-width:100%;
+    margin-bottom:10px;
+    
+}
+
+.header__nav{
+    
+}
+
+.header__nav__item{
+    display:inline-block;
+    padding: 6px;
+    margin:0px 5px 3px 0px;
+    max-width:33%;
+    border-radius:5px;
+    color:#000;
+    text-decoration: none;
+}
+
+.header__copy{
+    
+}
+.main{
+    
+}
+
+/** colors **/
+#BG-COLOR-GREY,
+
+#bg-color-grey {
+    background-color: #666666;
+}
+
+
+.videos{
+    
+}
+
+.videos__item{
+    
+}
+
+
+.videos__item__cta {
+	display:inline-block;
+    margin: 5px 0px;
+    color:#fff;
+}
+.videos__item__box {
+    display:inline-block;
+    border:3px solid #000;
+    padding:5px 5px 0px;
+    background-color:#dddddd;
+    max-width:100%;
+}
+
+.videos__item__box:hover,.videos__item__box:focus{
+    border-color: #333333;
+}
+
+.videos__item__thumb {
+    display:inline-block;
+    max-width:100%;
+}
+
+
+.videos__item__watch {
+	width:100%;
+    display:inline-block;
+    /*background-color:green;*/
+    background:#EC7FEC;
+    background: -webkit-linear-gradient(#EC7FEC, #FF69B4); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#EC7FEC, #FF69B4); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#EC7FEC, #FF69B4); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#EC7FEC, #FF69B4); /* Standard syntax */
+    padding: 6px;
+    border-radius:10px;
+    /*border:#FF69B4 2px solid;*/
+    color:#fff;
+    font-weight:bold;
+    font-size:1.2em;
+    /*-moz-animation-duration: 2s;
+	-moz-animation-delay: 1s;
+	-moz-animation-iteration-count: 1;*/
+	-webkit-animation-duration: 3s;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: 1;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	text-shadow:0px -1px 2px #000;
+}
+.videos__item__watch:hover,.videos__item__watch:focus, .videos__item__watch:active{
+    background-color:#FF69B4;
+    background-image: none;
+}
+.videos__item__meta {
+	background:#fff;
+	color:#000;
+	border-radius:10px;
+	padding:3px 5px;
+}
+
+.videos__item, .videos__item__watch{
+	margin: 5px 0px;
+}
+.footer{
+    
+}
+

@@ -1,0 +1,36 @@
+{
+  "name": "mobstuff_tests",
+  "version": "0.0.0",
+  "authors": [
+    "Aaron <aaron.wilson@reporo.com>"
+  ],
+  "description": "A collection of tests for the MobStuff sites",
+  "keywords": [
+    "MobStuff"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "*",
+    "foundation": "*",
+    "foundation-icon-fonts": "*",
+    "normalize-css": "~3.0.1",
+    "modernizr": "~2.7.2",
+    "mediaelement": "~2.14.2",
+    "animate.css": "~3.1.1",
+    "mustache": "~0.8.1",
+    "requirejs-text": "~2.0.12",
+    "underscore": "~1.6.0",
+    "backbone": "~1.1.2",
+    "requirejs-i18n": "~2.0.4",
+    "jquery-validation": "~1.12.0",
+    "jquery-form": "~3.46.0"
+  }
+}
