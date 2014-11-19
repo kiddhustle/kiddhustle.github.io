@@ -92,18 +92,9 @@
                 
                 <h2>Screenshots</h2>
                 <h3>Reporo UI</h3>
-                <ul class="clearing-thumbs" data-clearing="data-clearing">
-                	<li>
-                		<a href="images/reporo_ui/home.png" class="th ui">
-                			<img alt="home" src="images/reporo_ui/home.png" />
-                		</a>
-                	</li>
-                	<li>
-                		<a href="images/reporo_ui/reports_advertiser.png" class="th ui">
-                			<img alt="home" src="images/reporo_ui/reports_advertiser.png" />
-                		</a>
-                	</li>
-                </ul>
+                <ul class="clearing-thumbs" data-clearing="data-clearing" id="screenshots_reporo_ui"></ul>
+                <h3>Mobbill UI</h3>
+                <ul class="clearing-thumbs" data-clearing="data-clearing" id="screenshots_mobbill_ui"></ul>
                 <ul>
                     <li><a href="css/flexbox/">Flexbox</a></li>
                     <li><a href="js/infinite-scroll/">Infinite scroll</a></li>
@@ -117,10 +108,15 @@
                 </p>
             </footer>
         </div>
-        <script type="application/javascript" src="bower_components/foundation/js/vendor/jquery.js"></script>
-        <script type="application/javascript" src="bower_components/foundation/js/foundation.js"></script>
-        <script type="application/javascript">
-        $(document).foundation();
+        <!--<script type="application/javascript" src="bower_components/foundation/js/vendor/jquery.js"></script>
+        <script type="application/javascript" src="bower_components/foundation/js/foundation.js"></script>-->
+        <script id="tmpl_screenshot_thumbnail" type="x-tmpl-mustache">
+        	<li>
+        		<a href="{{url}}" class="th ui">
+        			<img alt="{{alt}}" src="{{url}}" />
+        		</a>
+        	</li>
         </script>
+        <script type="application/javascript" data-main="assets/js/main.js" src="bower_components/requirejs/require.js"></script>
     </body>
 </html>
