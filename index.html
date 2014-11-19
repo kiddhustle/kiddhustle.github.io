@@ -32,7 +32,13 @@
                 margin:0px auto;
                 text-align:center;
             }
+            
+            .th.ui img {
+            	width:100px;
+            	height:100px;
+            }
         </style>
+        <script type="application/javascript" src="bower_components/foundation/js/vendor/modernizr.js"></script>
     </head>
 
     <body>
@@ -72,6 +78,21 @@
 	                	</tr>
                 	</tbody>
                 </table>
+                
+                <h2>Screenshots</h2>
+                <h3>Reporo UI</h3>
+                <ul class="clearing-thumbs" data-clearing="data-clearing">
+                	<li>
+                		<a href="images/reporo_ui/home.png" class="th ui">
+                			<img alt="home" src="images/reporo_ui/home.png" />
+                		</a>
+                	</li>
+                	<li>
+                		<a href="images/reporo_ui/reports_advertiser.png" class="th ui">
+                			<img alt="home" src="images/reporo_ui/reports_advertiser.png" />
+                		</a>
+                	</li>
+                </ul>
                 <ul>
                     <li><a href="css/flexbox/">Flexbox</a></li>
                     <li><a href="js/infinite-scroll/">Infinite scroll</a></li>
@@ -85,5 +106,10 @@
                 </p>
             </footer>
         </div>
+        <script type="application/javascript" src="bower_components/foundation/js/vendor/jquery.js"></script>
+        <script type="application/javascript" src="bower_components/foundation/js/foundation.js"></script>
+        <script type="application/javascript">
+        $(document).foundation();
+        </script>
     </body>
 </html>
