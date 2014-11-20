@@ -1,0 +1,21 @@
+{
+  "name": "resizablechart",
+  "version": "0.0.0",
+  "authors": [
+    "kiddhustle <aaronwilson_ncn@yahoo.co.uk>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "highcharts": "~4.0.4",
+    "jquery": "~2.1.1",
+    "knockout": "~3.2.0",
+    "foundation": "~5.4.4"
+  }
+}
