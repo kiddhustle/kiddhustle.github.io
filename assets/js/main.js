@@ -19,7 +19,10 @@ requirejs.config({
     "foundation.tab": '../../bower_components/foundation/js/foundation/foundation.tab',
     "foundation.toolbar": '../../bower_components/foundation/js/foundation/foundation.toolbar',
     "foundation.topbar": '../../bower_components/foundation/js/foundation/foundation.topbar',
-	"mustache": '../../bower_components/mustache/mustache'
+	"mustache": '../../bower_components/mustache/mustache',
+	"skrollr": '../../bower_components/skrollr/dist/skrollr.min',
+	"skrollr.ie": '../../bower_components/skrollr-ie/dist/skrollr.ie.min',
+	"skrollr.menu": '../../bower_components/skrollr-menu/dist/skrollr.menu.min'
   },
   shim: {
     "jquery.cookie": ['jquery'],
@@ -39,12 +42,14 @@ requirejs.config({
     "foundation.slider": ['foundation'],
     "foundation.tab": ['foundation'],
     "foundation.toolbar": ['foundation'],
-    "foundation.topbar": ['foundation']
+    "foundation.topbar": ['foundation'],
+    "skrollr.ie": ['skrollr'],
+    "skrollr.menu": ['skrollr']
   }
 });
 
-require( ['ScreenshotImagesUI','mustache','jquery', 'foundation'],
-	function( aoImgs, Mustache, $ ){
+require( ['ScreenshotImagesUI','skrollr','mustache','jquery', 'foundation'],
+	function( aoImgs, skrollr, Mustache, $ ){
 		var template = $('#tmpl_screenshot_thumbnail').html();
 		Mustache.parse(template);
 		
