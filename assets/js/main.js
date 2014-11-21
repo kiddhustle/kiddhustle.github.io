@@ -48,8 +48,9 @@ requirejs.config({
   }
 });
 
-require( ['ScreenshotImagesUI','skrollr','mustache','jquery', 'foundation'],
+require( ['ScreenshotImagesUI','skrollr','mustache','jquery', 'foundation', 'skrollr.menu', 'skrollr.ie'],
 	function( aoImgs, skrollr, Mustache, $ ){
+		// build markup
 		var template = $('#tmpl_screenshot_thumbnail').html();
 		Mustache.parse(template);
 		
@@ -66,7 +67,9 @@ require( ['ScreenshotImagesUI','skrollr','mustache','jquery', 'foundation'],
 			buildScreenshotMarkup( oSet );
 		} );
 		
+		// activate plugins
 		$(document).foundation();
+		// start
 		console.log('start');
 		console.log(aoImgs);
 	}
