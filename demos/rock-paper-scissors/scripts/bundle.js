@@ -51,7 +51,7 @@ var GameController = function(){
 	self.htmlMovesSelectorP1 = '#gamewindow__body__moves__options--player .gamewindow__body__moves__options__item';
 	self.htmlMovesSelectorP2 = '#gamewindow__body__moves__options--opponent .gamewindow__body__moves__options__item';
 	self.gameDuration = 3000;
-	self.gameDurationInterations = 6;
+	self.gameDurationInterations = 12;
 	self.gameDurationInterationCount = 0;
 	self.gameDurationInterval = self.gameDuration / self.gameDurationInterations;
 	self.gameIntervalId;
@@ -66,7 +66,7 @@ var GameController = function(){
 		}
 		else {
 			self.gameDurationInterationCount++;
-			var secs_remaining = 3 - ( Math.floor( this.gameDurationInterationCount/2 ) );
+			var secs_remaining = 3 - ( Math.floor( this.gameDurationInterationCount/4 ) );
 
 			// pick move on every interval
 			if(this.state.player === 'computer'){
