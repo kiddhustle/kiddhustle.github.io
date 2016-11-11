@@ -1,4 +1,4 @@
-var cacheName = 'freedomCountdown0.0.2';
+var cacheName = 'freedomCountdown0.0.7';
 var filesToCache = [
   'index.html',
   'script.js',
