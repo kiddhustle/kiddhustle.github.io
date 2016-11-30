@@ -11,8 +11,8 @@
 		<meta name="author" content="boss" />
 
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="../../bower_components/foundation/css/normalize.css"/>
-		<link rel="stylesheet" type="text/css" href="../../bower_components/foundation/css/foundation.css"/>
+		<link rel="stylesheet" type="text/css" href="../bower_components/foundation/css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="../bower_components/foundation/css/foundation.css"/>
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -25,7 +25,7 @@
 				max-width:800px;
 				margin: 0px auto;
 			}
-			
+
 			.btn_display_chart {
 				display:inline-block;
 				padding:10px;
@@ -33,7 +33,7 @@
 			.live_chart{
 				width:100%;
 				max-width:800px
-				
+
 			}
 			.hidden {
 				display:none;
@@ -47,13 +47,13 @@
 				<h1>Interactive Bar Report</h1>
 			</header>
 			<article class="report">
-				
+
 				<div class="chart"></div>
 				<div class="chart_container" data-bind="visible:display_chart,css:{hidden:display_chart === false}">
 					<h2>Chart</h2>
 					<div class="live_chart" data-bind="ReportChart:chartData"></div>
 				</div>
-				
+
 				<!--<div id="drag"></div>
 				<div id="drop"></div>-->
 				<h2>Data Entry</h2>
@@ -74,15 +74,15 @@
 							<td><input data-bind="value:data[1]" type="number" step="1"/></td>
 							<td><input data-bind="value:data[2]" type="number" step="1"/></td>
 							<td><input data-bind="value:data[3]" type="number" step="1"/></td>
-							
+
 						</tr>
-						
+
 					</tbody>
 				</table>
 				<div data-bind="visible:completed">
 					<input class="btn_display_chart text-center" data-bind="click:function(data, event){set_chart_display(true)}" type="button" value="Display chart"/></a>
 				</div>
-				
+
 			</article>
 			<footer>
 				<p>
@@ -90,10 +90,10 @@
 				</p>
 			</footer>
 		</div>
-		<script type="application/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
-		<script type="application/javascript" src="../../bower_components/highcharts/highcharts.js"></script>
+		<script type="application/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="application/javascript" src="../bower_components/highcharts/highcharts.js"></script>
 		<script type="application/javascript" src="lib/draggable-points.js"></script>
-		<script type="application/javascript" src="../../bower_components/knockout/dist/knockout.debug.js"></script>
+		<script type="application/javascript" src="../bower_components/knockout/dist/knockout.debug.js"></script>
 		<script type="application/javascript" src="js/ko.binding.ReportChart.js"></script>
 		<script type="application/javascript" src="js/SeriesVM.js"></script>
 		<script type="application/javascript" src="js/ReportVM.js"></script>
@@ -102,7 +102,7 @@
 			$(document).ready(function(){
 				var report_columns = ['5 inch gloss', '5 inch lustre','6 inch gloss', '6 inch lustre'];
 				oReport = new ReportVM( 'PaperShaker Sales', report_columns );
-				
+
 				var seriesOrders = new SeriesVM( 'Orders', report_columns );
 				var seriesItems = new SeriesVM( 'Items', report_columns );
 				oReport.series.push( seriesOrders );
