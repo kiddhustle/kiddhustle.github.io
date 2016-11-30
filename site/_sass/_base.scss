@@ -1,6 +1,10 @@
 /**
  * Reset some basic elements
  */
+*, *:before, *:after {
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -120,7 +124,32 @@ blockquote {
     }
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 
+  background: white;
+  margin-bottom: 1.25rem;
+  border: solid 1px #dddddd;
+  table-layout: auto;
+
+  a:hover {
+    color:#222222;
+  }
+}
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+    background: #f9f9f9;
+}
+table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
+    display: table-cell;
+    line-height: 1.125rem;
+}
+table tr th, table tr td {
+    padding: 0.5625rem 0.625rem;
+    font-size: 0.875rem;
+    color: #222222;
+    text-align: left;
+}
 
 /**
  * Code formatting
