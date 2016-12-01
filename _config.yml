@@ -18,7 +18,8 @@ email: mail@frontendwebdeveloper.london
 description: > # this means to ignore newlines until "baseurl:"
   This is the GitHub page for fwd.london. Here you will find blog posts and demos/ code experiments.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://frontendwebdeveloper.london # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+portfolio_url: https://frontendwebdeveloper.london
 twitter_username: FWDlondon
 github_username:  kiddhustle
 # google_analytics: UA-NNNNNNNN-N
